@@ -23,7 +23,7 @@ function TileDrawer(ctx) {
 
     this.ctx.save();
     if (tile.hovering) {
-      tile.shape.fillStroke(this.ctx, "orange", stroke);
+      tile.shape.fillStroke(this.ctx, "white", stroke);
     } else {
       tile.shape.fillStroke(this.ctx, tile.resource.color, stroke);
     }

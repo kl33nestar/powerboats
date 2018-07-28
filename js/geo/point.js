@@ -20,14 +20,17 @@ Point.draw = function(ctx, tile, fillOverride) {
   var y = tile.y;
   
   var fill = "white";
+
   if (fillOverride) {
+    console.log("using override color: ", fillOverride)
     fill = fillOverride;
   }
   
+/*  
   if (tile.isGivingDamage) {
     fill = "red";
   }
-
+*/
   ctx.save();
   ctx.translate(x, y);
 

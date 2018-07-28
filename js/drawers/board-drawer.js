@@ -22,10 +22,11 @@ BoardDrawer.prototype.draw = function() {
   }
 
   // draw tiles
+  // TODO highlight color is specified here -- change for initial game
   for (var i = 0; i < board.tiles.length; i++) {
     if (board.tiles[i].hover) {
       var tile = board.tiles[i];
-      var highlightColor = "yellow";
+      var highlightColor = "white";
       Point.draw(this.ctx, tile, highlightColor);
     }
   }

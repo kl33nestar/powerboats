@@ -29,7 +29,7 @@ Screen.prototype.handleMousemove = function(e) {
   var thing = SCREEN.game.board.getTile(MOUSE_X, MOUSE_Y);
 
   SCREEN.dirty = false;
-  if (thing !== LAST_THING) {
+  if (thing && thing !== LAST_THING) {
     if (LAST_THING !== undefined) {
       LAST_THING.hovering = false;
       LAST_THING.isDirty = true;

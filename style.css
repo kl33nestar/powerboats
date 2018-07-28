@@ -9,6 +9,19 @@ body {
   background-color: CornflowerBlue;
 }
 
+/* TODO change these styles to draw specific tile images */
+#tile001{
+  background-color: orange;
+}
+
+#tile002{
+  background-color: orangered;
+}
+
+#tile003{
+  background-color: green;
+}
+
 #actions {
   position: absolute;
   bottom: 0;
